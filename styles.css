@@ -1,0 +1,33 @@
+:root {
+  --color-primary: hsl(300, 43%, 22%);
+  --color-secondary: hsl(303, 10%, 53%);
+  --color-tertiary: hsl(300, 24%, 96%);
+  --color-name: hsl(0, 0%, 100%);
+  --color-accent: hsl(333, 80%, 67%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+h1 {
+  color: var(--color-primary);
+}
+
+p {
+  color: var(--color-secondary);
+}
+.rating {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  font-weight: bold;
+}
