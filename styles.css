@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+.conatiner {
+  padding: 3rem;
+}
+
 /* Typography */
 
 html {
@@ -30,4 +34,27 @@ p {
   background-color: var(--color-tertiary);
   color: var(--color-primary);
   font-weight: bold;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
 }
