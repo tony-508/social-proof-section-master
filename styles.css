@@ -12,8 +12,9 @@
   box-sizing: border-box;
 }
 
-.conatiner {
+body {
   padding: 3rem;
+  margin: 0;
 }
 
 /* Typography */
@@ -29,11 +30,6 @@ h1 {
 
 p {
   color: var(--color-secondary);
-}
-.rating {
-  background-color: var(--color-tertiary);
-  color: var(--color-primary);
-  font-weight: bold;
 }
 
 /* Grid */
@@ -56,5 +52,35 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
+  }
+}
+
+/* Rating feature */
+.rating {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  font-weight: bold;
+  padding: 1rem 3rem;
+  width: fit-content;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.rating-star {
+  letter-spacing: 0.4rem;
+}
+
+.rating-text {
+  padding-top: 0.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .rating {
+    display: flex;
+    flex-direction: row;
+  }
+  .rating-text {
+    padding-top: 0;
+    padding-left: 1rem;
   }
 }
