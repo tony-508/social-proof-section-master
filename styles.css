@@ -13,7 +13,6 @@
 }
 
 body {
-  padding: 3rem;
   margin: 0;
 }
 
@@ -29,17 +28,44 @@ h1 {
 }
 
 p {
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 /* Grid */
 .grid {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  padding: 2rem;
+  grid-template-rows: repeat(2, fit-content);
   text-align: center;
   justify-content: center;
+}
+
+.grid-rating {
+  margin-top: 3rem;
+}
+
+.grid1 {
+  justify-content: center;
+}
+
+.grid1-rating {
+  justify-content: center;
+}
+
+.grid2 {
+  margin-top: 4rem;
+}
+
+.grid2 p {
+  text-align: left;
+  color: var(--color-tertiary);
 }
 
 @media screen and (min-width: 1024px) {
@@ -47,12 +73,23 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
+    text-align: left;
+  }
+
+  .grid1-text {
+    padding-right: 3rem;
   }
 
   .grid2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .grid-rating {
+    justify-self: end;
   }
 }
 
@@ -62,7 +99,7 @@ p {
   color: var(--color-primary);
   font-weight: bold;
   padding: 1rem 3rem;
-  width: fit-content;
+  width: auto;
   border-radius: 5px;
   margin-top: 1rem;
 }
@@ -80,6 +117,17 @@ p {
     display: flex;
     flex-direction: row;
   }
+
+  .rating1 {
+    position: relative;
+    transform: translateX(-4rem);
+  }
+
+  .rating2 {
+    position: relative;
+    transform: translateX(-2rem);
+  }
+
   .rating-text {
     padding-top: 0;
     padding-left: 1rem;
@@ -89,10 +137,10 @@ p {
 /* Buyer */
 .buyer {
   background-color: var(--color-primary);
-  width: fit-content;
+  width: auto;
   padding: 2rem;
   border-radius: 10px;
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 .buyer-name {
@@ -118,6 +166,10 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  .buyer {
+    margin: 1rem 1.5rem 1rem 0;
+  }
+
   .buyer2 {
     position: relative;
     transform: translateY(1rem);
