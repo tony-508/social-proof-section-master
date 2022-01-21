@@ -1,0 +1,16 @@
+{
+  "name": "social-proof-section-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://tony-508.github.io/social-proof-section-master",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
